@@ -710,7 +710,7 @@ button:hover {
   padding-right: 20px; }
 
 /*CARRUSEL*/
-.botones-carrusel button:hover {
+#carouselExampleIndicators button:hover {
   color: none;
   background-color: none;
   transform: none; }
