@@ -41,9 +41,9 @@ h3 {
 		color: #2D2D2D;
 		text-decoration: none;
 
-			&:hover {
-				color: #FFC80F;
-			}
+		&:hover {
+			color: #FFC80F;
+		}
 	}
 
 	ul {
@@ -100,67 +100,99 @@ main {
 	flex-direction: row;
 	justify-content: space-evenly;
 
-	.imagen-paquetazos {
-		position: relative;
-		display: inline-block;
+	.destacado-paquetazos {
+		.imagen-paquetazos {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-		img {
-			transition: 0.2s ease-in-out;
+			a {
+				img {
+					transition: 0.2s ease-in-out;
 
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
-	}	
-
-	.titulo-imagen-paquetazos p {
-		position: absolute;
-		top: 45%;
-		right: 23%;
-		font-size: 25px;
-		color: white;
-	}
-
-	.imagen-en-promo {
-		position: relative;
-		display: inline-block;
-
-		img {
-			transition: 0.2s ease-in-out;
-
-			&:hover {
-				transform: scale(1.1);
-			}
-		}
-	}
-
-	.titulo-imagen-en-promo p {
-		position: absolute;
-		top: 182%;
-		left: 45%;
-		font-size: 25px;
-		color: white;
-	}
-
-	.imagen-pense-en-vos {
-		position: relative;
-		text-align: center;
-
-			img {
-				transition: 0.2s ease-in-out;
-
-				&:hover {
-					transform: scale(1.1);
+					&:hover {
+						transform: scale(1.1);
+					}
 				}
 			}
-	}	
 
-	.titulo-imagen-pense-en-vos p {
-		position: absolute;
-		top: 45%;
-		left: 25%;
-		font-size: 25px;
-		color: white;
+			.titulo-imagen-paquetazos {
+				position: absolute;
+
+				p {
+					margin-top: unset;
+					margin-bottom: unset;
+					font-size: 25px;
+					color: white;
+				}
+
+				a {
+					text-decoration:none;
+				}
+			}
+		}	
+	}
+
+	.destacado-en-promo {
+		.imagen-en-promo {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			a {
+				img {
+					transition: 0.2s ease-in-out;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+
+			.titulo-imagen-en-promo {
+				position: absolute;
+				p {
+					margin-top: unset;
+					margin-bottom: unset;
+					font-size: 25px;
+					color: white;
+				}
+
+				a {
+					text-decoration:none;
+				}
+			}
+		}
+	}
+
+	.destacado-pense-en-vos {
+		.imagen-pense-en-vos {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			a {
+				img {
+					transition: 0.2s ease-in-out;
+
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+			.titulo-imagen-pense-en-vos {
+				position: absolute;
+				p {
+					margin-top: unset;
+					margin-bottom: unset;
+					font-size: 25px;
+					color: white;
+				}
+
+				a {
+					text-decoration:none;
+				}
+			}
+		}
 	}
 }
 
@@ -190,9 +222,9 @@ main {
 			background-color: #555555;
 			padding: 8px;
 
-				&:hover {
-					background-color: #e6a000;
-				}
+			&:hover {
+				background-color: #e6a000;
+			}
 		}
 }
 
@@ -213,9 +245,9 @@ main {
 	.card-paquetazos {
 		padding: 0;
 
-	 a {
-		margin: 20px;
-		margin-bottom: 15px;
+		 a {
+			margin: 20px;
+			margin-bottom: 15px;
 
 			.detalle-card-producto {
 				font-size: 14px;
@@ -322,9 +354,9 @@ main {
 		margin-bottom: 25px;
 		padding: 3px;
 
-			&:hover {
-				background-color: #e6a000; 
-			}
+		&:hover {
+			background-color: #e6a000; 
+		}
 	}
 }
 
@@ -395,15 +427,16 @@ main {
 
 		p {
 		 	font-size: 18px;
-		 }
+		}
 	}
 
 	.boton-por-aca a {
 		text-decoration: none;
 		color: #2d2d2d;
-			&:hover {
-				color: white;
-				}
+
+		&:hover {
+			color: white;
+		}
 	}
 }
 
@@ -447,9 +480,10 @@ main {
 	.boton-mas-alla a {
 		text-decoration: none;
 		color: #2d2d2d;
-			&:hover {
-				color: white;
-				}
+
+		&:hover {
+			color: white;
+		}
 	}
 }
 
@@ -461,33 +495,8 @@ button {
 	border-radius: 5px;
 }
 
-/* DENTRO DE "UN TOQUE DE BRILLO PARA TU MARCA" */
-
-.seccion-un-toque-de-brillo {
-	img {
-	transition: 0.5s ease-in-out;
-
-		&:hover {
-			transform: scale(1.02);
-		}
-	}
-
-	h1 {
-		font-size: 30px;
-		margin: 25px;
-	}
-
-	p {
-		margin-left: 25px;
-	}
-
-	 ul {
-		margin-left: 10px;
-	}
-
-	.ult-parrafo-utdb p {
-		margin-bottom: 100px;
-	}
+.carousel button:hover {
+    background-color: unset;
 }
 
 /*DENTRO DE PEDÍ UN DESEO*/
@@ -512,14 +521,43 @@ button {
 	}
 }
 
+/* DENTRO DE "UN TOQUE DE BRILLO PARA TU MARCA" */
+
+.seccion-un-toque-de-brillo {
+	img {
+		transition: 0.5s ease-in-out;
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+
+	h1 {
+		font-size: 30px;
+		margin: 25px;
+	}
+
+	p {
+		margin-left: 25px;
+	}
+
+	 ul {
+		margin-left: 10px;
+	}
+
+	.ult-parrafo-utdb p {
+		margin-bottom: 100px;
+	}
+}
+
 /*PÁGINA CONOCENOS*/
 
 .portada-conocenos img {
 	transition: 0.5s ease-in-out;
 
-		&:hover {
-			transform: scale(1.02);
-		}
+	&:hover {
+		transform: scale(1.02);
+	}
 }
 
 .titulo-ad-astra h1 {
@@ -618,9 +656,9 @@ button {
 		background-color: #555555;
 		padding: 8px;
 
-			&:hover {
-				background-color: #e6a000;
-			}
+		&:hover {
+			background-color: #e6a000;
+		}
 	}
 
 	.detalle-card-producto {
@@ -663,9 +701,9 @@ button {
 .portada-como-compro img {
 	transition: 0.5s ease-in-out;
 
-		&:hover {
-			transform: scale(1.02);
-		}
+	&:hover {
+		transform: scale(1.02);
+	}
 }
 
 .titulo-como-compro h1 {
@@ -783,8 +821,9 @@ button {
 }
 
 .titulos-footer-2 {
-	margin-top: 5px;
-}
+		margin-top: 5px;
+		font-size: 18px !important; 
+	}
 
 .envios {
 	margin: 0px;
@@ -797,7 +836,7 @@ button {
 		margin: 0;
 		font-size: 15px;
 
-			li {
+		li {
 			margin: 3px;
 		}
 	}
@@ -814,7 +853,7 @@ button {
 		margin: 0;
 		font-size: 15px;
 
-			li {
+		li {
 			margin: 3px;
 		}
 	}
@@ -838,9 +877,9 @@ button {
 		padding-left: 0px;
 		margin-bottom: 5px;
 
-			a {
-				text-decoration: none;
-			}
+		a {
+			text-decoration: none;
+		}
 	}
 }
 
@@ -852,25 +891,30 @@ button {
 		padding: 0px;
 		padding-left: 0;
 
-		.datos-contacto p {
-			background-image: url("imagenes/footer-img/mail.png");
-			background-repeat: no-repeat;
-			background-size: 20px;
-			padding: 0px;
-			padding-left: 25px;
-			margin: 2px;
-			font-size: 15px;
+		.datos-contacto {
+			.icono-mail {
+				font-size: 20px;
+			}
+
+			p {
+				display: inline-block;
+				padding: 0px;
+				margin: 2px;
+				font-size: 16px;
+			}
 		}
 
-		.datos-contacto-tel p {
-			background-image: url("imagenes/footer-img/whatsapp.png");
-			background-repeat: no-repeat;
-			background-size: 20px;
-			padding: 0px;
-			padding-left: 25px;
-			margin: 2px;
-			font-size: 15px;
-		}
+		.datos-contacto-tel 
+			.icono-whatsapp {
+				font-size: 25px;
+			}
+
+			p {
+				display: inline-block;
+				padding: 0px;
+				margin: 2px;
+				font-size: 16px;
+			}
 	}
 }
 
@@ -882,26 +926,26 @@ button {
 		position: relative;
 		font-size: 13px;
 
-			.campo-texto {
-				width: 200px;
-				height: 49px;
-				padding-right: 10px;
-				padding-left: 10px;
-			}
+		.campo-texto {
+			width: 200px;
+			height: 49px;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
 
-			.texto-boton {
-				position: absolute;
-				bottom: 0;
-				right: -140px;
-				background-color: #FFC80F;
-				border: none;
-				padding: 15px 25px 15px 25px;
+		.texto-boton {
+			position: absolute;
+			bottom: 0;
+			right: -140px;
+			background-color: #FFC80F;
+			border: none;
+			padding: 15px 25px 15px 25px;
 
-					&:hover {
-						color: white;
-						background-color: #e6a000;
-					}
+			&:hover {
+				color: white;
+				background-color: #e6a000;
 			}
+		}
 	}
 }
 
@@ -972,9 +1016,9 @@ button:hover {
 	border: none;
 	border-radius: 5px;
 
-		&:hover {
-			transform: none;
-			background-color: #e6a000;
+	&:hover {
+		transform: none;
+		background-color: #e6a000;
 		}
 }
 
@@ -1001,8 +1045,6 @@ button:hover {
 }
 
 /* ACÁ TODOS LOS @MEDIA!!!*/ 
-
-/* tamaños pantallas: 768 mobile // 991 tablet // 1199 desktop, la que ya está hecha */
 
 @media only screen and (max-width:992px) {
 
@@ -1032,33 +1074,7 @@ button:hover {
  		margin-bottom: 0;
  	}
 
- 	/* LAS TRES SECCIONES DE ABAJO DEL MENÚ*/
-
- 	main {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-evenly;
-
-		.destacado-pense-en-vos {
-			margin-top: 80px;
-			margin-bottom: 0px;
-		}
-
-
-		.imagen-en-promo {
-			position: relative;
-			display: inline-block;
-		}
-
-		.titulo-imagen-en-promo p {
-			position: absolute;
-			top: 185%;
-			left: 65%;
-			font-size: 25px;
-			color: white;
-		}
-	}
+ 	/* LAS TRES SECCIONES DE ABAJO DEL MENÚ YA ESTÁN OK!*/
 
 	/* ACÁ SECCIÓN PRODUCTOS EN INICIO */
 
@@ -1208,19 +1224,6 @@ button:hover {
 
 		.destacado-en-promo {
 			margin-top: 80px;
-
-			.imagen-en-promo {
-				position: relative;
-				display: inline-block;
-			}
-
-			.titulo-imagen-en-promo p {
-				position: absolute;
-				top: 250%;
-				left: 40%;
-				font-size: 25px;
-				color: white;
-			}
 		}
 	}
 
@@ -1408,9 +1411,9 @@ button:hover {
 			color: #2D2D2D;
 			text-decoration: none;
 
-				&:hover {
-					color: #FFC80F;
-				}
+			&:hover {
+				color: #FFC80F;
+			}
 		}
 
 		ul {
@@ -1468,20 +1471,11 @@ button:hover {
 			margin-bottom: 0px;
 
 			.imagen-pense-en-vos img {
-				position: relative;
 				text-align: center;
 				width: 100%;
 				height: 100%;
 				padding: 10px;
 				margin: 0;
-			}
-
-			.titulo-imagen-pense-en-vos p {
-				position: absolute;
-				top: 45%;
-				left: 20%;
-				font-size: 25px;
-				color: white;
 			}
 		}
 
@@ -1489,20 +1483,11 @@ button:hover {
 			margin-top: 50px;
 
 			.imagen-en-promo img {
-				position: relative;
 				display: inline-block;
 				width: 100%;
 				height: 100%;
 				padding: 10px;
 				margin: 0;
-			}
-
-			.titulo-imagen-en-promo p {
-				position: absolute;
-				top: 178%;
-				left: 25%;
-				font-size: 25px;
-				color: white;
 			}
 		}	
 
@@ -1510,20 +1495,12 @@ button:hover {
 			margin-top: 0px;
 
 			.imagen-paquetazos img {
-				position: relative;
+
 				display: inline-block;
 				width: 100%;
 				height: 100%;
 				padding: 10px;
 				margin: 0;
-			}
-
-			.titulo-imagen-paquetazos p {
-				position: absolute;
-				top: 45%;
-				right: 25%;
-				font-size: 25px;
-				color: white;
 			}
 		}
 	}
@@ -1532,6 +1509,15 @@ button:hover {
 
 	.padre-cards-paquetazos {
 		margin: 0;
+	}
+
+	/*DENTRO SECCIÓN PENSÉ EN VOS */
+
+	.seccion-pense-en-vos {
+
+		p {
+			padding-right: 18px;
+		}
 	}
 
 	/* ACÁ SECCIÓN PRODUCTOS EN INICIO */
@@ -1632,6 +1618,22 @@ button:hover {
 		font-size: 13px;
 		border-radius: 5px;
 		border-radius: 5px;
+	}
+
+	/*DENTRO DE PEDÍ UN DESEO*/
+
+	.seccion-pedi-un-deseo {
+		p {
+			padding-right: 18px;
+		}
+	}
+
+	/* DENTRO DE "UN TOQUE DE BRILLO PARA TU MARCA" */
+
+	.seccion-un-toque-de-brillo {
+		p {
+			padding-right: 18px;
+		}
 	}
 
 	/*PÁGINA CONOCENOS*/
@@ -1803,14 +1805,14 @@ button:hover {
 			margin: 5px;
 			padding: 5px;
 
-				img {
-					width: 100%;
-				}
+			img {
+				width: 100%;
+			}
 
-				 p {
-					font-size: 15px;
+			 p {
+				font-size: 15px;
 					padding-left: 0;
-				}
+			}
 		}
 
 		.envios {
