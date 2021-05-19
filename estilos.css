@@ -470,6 +470,38 @@ button {
   display: flex;
   margin-left: 8px; }
 
+/*PRODUCTO MODELO*/
+.producto-modelo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+  padding-left: 50px;
+  margin: 0px; }
+  .producto-modelo .imagen-producto-modelo {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 100px; }
+  .producto-modelo .títuloyprecio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 50px; }
+    .producto-modelo .títuloyprecio h2 {
+      color: #2D2D2D;
+      font-size: 23px; }
+    .producto-modelo .títuloyprecio h3 {
+      padding-top: 15px;
+      color: #2D2D2D; }
+  .producto-modelo .descripción-producto {
+    display: inline-block; }
+    .producto-modelo .descripción-producto p {
+      margin-left: 100px;
+      margin-bottom: 100px; }
+  .producto-modelo .boton-agregar-carrito {
+    padding: 0px;
+    padding-top: 25px; }
+
 /*PÁGINA CÓMO COMPRO*/
 .portada-como-compro img {
   transition: 0.5s ease-in-out; }
