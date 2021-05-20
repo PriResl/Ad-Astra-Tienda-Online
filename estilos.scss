@@ -550,7 +550,7 @@ button {
 	}
 }
 
-/*PÁGINA CONOCENOS*/
+/*SECCIÓN CONOCENOS*/
 
 .portada-conocenos img {
 	transition: 0.5s ease-in-out;
@@ -590,7 +590,7 @@ button {
 	}
 }
 
-/* PAGINA PRODUCTOS */
+/*SECCIÓN PRODUCTOS */
 
 .titulo-categorias-productos {
 	margin: 15px;
@@ -706,13 +706,20 @@ button {
 	padding-left: 50px;
 	margin: 0px;
 
-	.imagen-producto-modelo {
+	.fotos-costado {
 		display: flex;
-		justify-content: flex-start;
-		padding-left: 100px;
+		flex-direction: column;
+		align-content: flex-start;
+
+		.imagenp-producto-modelo {
+			display: flex;
+			justify-content: flex-start;
+			padding: 25px;
+			padding-top: 0px;
+		}
 	}
 
-	.títuloyprecio {
+	.título-precio {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -720,7 +727,7 @@ button {
 
 		h2 {
 			color: #2D2D2D;
-			font-size: 23px;
+			font-size: 20px;
 		}
 
 		h3 {
@@ -729,22 +736,48 @@ button {
 		}
 	}
 
-	.descripción-producto {
-		display: inline-block;
-		
-		p {
-			margin-left: 100px;
-			margin-bottom: 100px;
-		}
-	}
-
 	.boton-agregar-carrito {
 		padding: 0px;
 		padding-top: 25px;
 	}
+
+	.icono-camión {
+		font-size: 15px;
+	}
+
+	p {
+		display: inline-block;
+		padding-top: 25px;
+		margin: 0px;
+		font-size: 13px;
+			
+	}
+
+	.formulario-costo-envío { 
+		.texto-botón {
+			display: flex;
+			flex-direction: flex-start;
+			align-content: center;
+			font-size: 16px;
+			background-color: #f0f0f0;
+			width: 235px;
+			margin-top: 25px;
+			padding-left: 70px;
+
+			&:hover {
+				transform: none;
+			}
+		}	
+	}
 }
 
-/*PÁGINA CÓMO COMPRO*/
+.descripción-producto-modelo {
+	padding-left: 240px;
+	padding-right: 450px;
+	padding-bottom: 100px;
+}
+
+/*SECCIÓN CÓMO COMPRO*/
 
 .portada-como-compro img {
 	transition: 0.5s ease-in-out;
@@ -769,7 +802,7 @@ button {
 	}
 }
 
-/*PÁGINA CONTACTANOS*/
+/*SECCIÓN CONTACTANOS*/
 
 .titulo-formulario-consulta h1 {
 	font-size: 30px;
@@ -1191,6 +1224,112 @@ button:hover {
 		border-radius: 5px;
 	}
 
+	/*PRODUCTO MODELO*/
+
+	.producto-modelo {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-content: center;
+		padding: 15px;
+		padding-left: 10px;
+		margin: 0;
+
+		.fotos-costado {
+			display: flex;
+			flex-direction: row;
+			align-content: flex-start;
+
+			.imagenp-producto-modelo {
+				display: flex;
+				justify-content: flex-start;
+				align-content: flex-start;
+				margin: 0;
+				padding: 2px;
+				padding-top: 10px;
+				padding-bottom: 15px;
+
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+
+		.imagen-producto-modelo img {
+				height: 100%;
+				width: 100%;
+			}
+		
+		.título-precio {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding-left: 10px;
+			padding-top: 20px;
+
+			h2 {
+				color: #2D2D2D;
+				font-size: 20px;
+			}
+
+			h3 {
+				padding-top: 15px;
+				color: #2D2D2D;
+			}
+
+			.calculá-envío p {
+				display: inline-block;
+				font-size: 12px;
+			}
+		}
+
+		.boton-agregar-carrito {
+			padding: 0px;
+			padding-top: 25px;
+		}
+
+		
+		.icono-camión {
+			font-size: 15px;
+		}
+
+		p {
+			display: inline-block;
+			padding-top: 25px;
+			margin: 0;
+			font-size: 15px;
+			}
+
+		.formulario-costo-envío {
+			.texto-botón {
+				display: flex;
+				flex-direction: flex-start;
+				align-content: center;
+				font-size: 13px;
+				background-color: #f0f0f0;
+				width: 200px;
+				margin: 0;
+				margin-top: 25px;
+				padding-left: 25px;
+
+				&:hover {
+					transform: none;
+				}
+			}	
+		}
+	 }
+
+	.descripción-producto-modelo {
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 100px;
+
+		p { 
+			font-size: 20px;
+		}
+	}
+
 	/* FOOTER */
 
 	.grilla-footer {
@@ -1220,7 +1359,6 @@ button:hover {
 		.titulos-footer {
 			margin-top: 10px;
 		}
-
 	}
 }
 
@@ -1324,7 +1462,6 @@ button:hover {
 		.imagen-pedi-un-deseo {
 			margin-top: 30px;
 		}
-
 	}
 
 	#banners-destacados-dos {
@@ -1356,6 +1493,112 @@ button:hover {
 	.boton-mas-alla button {
 		margin-bottom: 50px;
 		border-radius: 5px;
+	}
+
+	/*PRODUCTO MODELO*/
+
+	.producto-modelo {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-content: center;
+		padding: 15px;
+		padding-left: 10px;
+		margin: 0;
+
+		.fotos-costado {
+			display: flex;
+			flex-direction: row;
+			align-content: flex-start;
+
+			.imagenp-producto-modelo {
+				display: flex;
+				justify-content: flex-start;
+				align-content: flex-start;
+				margin: 0;
+				padding: 2px;
+				padding-top: 10px;
+				padding-bottom: 15px;
+
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+
+		.imagen-producto-modelo img {
+				height: 100%;
+				width: 100%;
+			}
+		
+		.título-precio {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding-left: 10px;
+			padding-top: 20px;
+
+			h2 {
+				color: #2D2D2D;
+				font-size: 20px;
+			}
+
+			h3 {
+				padding-top: 15px;
+				color: #2D2D2D;
+			}
+
+			.calculá-envío p {
+				display: inline-block;
+				font-size: 12px;
+			}
+		}
+
+		.boton-agregar-carrito {
+			padding: 0px;
+			padding-top: 25px;
+		}
+
+		
+		.icono-camión {
+			font-size: 15px;
+		}
+
+		p {
+			display: inline-block;
+			padding-top: 25px;
+			margin: 0;
+			font-size: 15px;
+			}
+
+		.formulario-costo-envío {
+			.texto-botón {
+				display: flex;
+				flex-direction: flex-start;
+				align-content: center;
+				font-size: 13px;
+				background-color: #f0f0f0;
+				width: 200px;
+				margin: 0;
+				margin-top: 25px;
+				padding-left: 25px;
+
+				&:hover {
+					transform: none;
+				}
+			}	
+		}
+	 }
+
+	.descripción-producto-modelo {
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 100px;
+
+		p { 
+			font-size: 20px;
+		}
 	}
 
 	/* FOOTER */
@@ -1748,7 +1991,113 @@ button:hover {
 		margin: 0;
 	}
 
-	/*PÁGINA CÓMO COMPRO*/
+	/*PRODUCTO MODELO*/
+
+	.producto-modelo {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-content: center;
+		padding: 15px;
+		padding-left: 10px;
+		margin: 0;
+
+		.fotos-costado {
+			display: flex;
+			flex-direction: row;
+			align-content: flex-start;
+
+			.imagenp-producto-modelo {
+				display: flex;
+				justify-content: flex-start;
+				align-content: flex-start;
+				margin: 0;
+				padding: 2px;
+				padding-top: 10px;
+				padding-bottom: 15px;
+
+				img {
+					height: 100%;
+					width: 100%;
+				}
+			}
+		}
+
+		.imagen-producto-modelo img {
+				height: 100%;
+				width: 100%;
+			}
+		
+		.título-precio {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding-left: 10px;
+			padding-top: 20px;
+
+			h2 {
+				color: #2D2D2D;
+				font-size: 20px;
+			}
+
+			h3 {
+				padding-top: 15px;
+				color: #2D2D2D;
+			}
+
+			.calculá-envío p {
+				display: inline-block;
+				font-size: 12px;
+			}
+		}
+
+		.boton-agregar-carrito {
+			padding: 0px;
+			padding-top: 25px;
+		}
+
+		
+		.icono-camión {
+			font-size: 15px;
+		}
+
+		p {
+			display: inline-block;
+			padding-top: 25px;
+			margin: 0;
+			font-size: 13px;
+			}
+
+		.formulario-costo-envío {
+			.texto-botón {
+				display: flex;
+				flex-direction: flex-start;
+				align-content: center;
+				font-size: 13px;
+				background-color: #f0f0f0;
+				width: 200px;
+				margin: 0;
+				margin-top: 25px;
+				padding-left: 25px;
+
+				&:hover {
+					transform: none;
+				}
+			}	
+		}
+	 }
+
+	.descripción-producto-modelo {
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 100px;
+
+		p { 
+			font-size: 16px;
+		}
+	}
+
+	/*SECCIÓN CÓMO COMPRO*/
 
 	.titulo-como-compro h1 {
 		margin: 25px;
@@ -1765,7 +2114,7 @@ button:hover {
 		}
 	}
 
-	/*PÁGINA CONTACTANOS*/
+	/*SECCIÓN CONTACTANOS*/
 
 	.titulo-formulario-consulta h1 {
 		font-size: 25px;
