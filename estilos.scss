@@ -253,10 +253,20 @@ main {
 				font-size: 14px;
 			}
 		}
+
+		.precio-prod {
+			font-size: 20px;
+		}
 	}
 }
 
-/* SECCIÓN PENSÉ EN VOS */
+/*DENTRO DE SECCIÓN EN PROMO*/
+
+.precio-prod {
+	font-size: 20px;
+}
+
+/* DENTRO DE SECCIÓN PENSÉ EN VOS */
 
 .seccion-pense-en-vos {
 	h1 {
@@ -304,7 +314,7 @@ main {
 		}
  }
 
-/* ACÁ ABAJO, PRODUCTOS INICIO */
+/* ACÁ EMPIEZAN LOS PRODUCTOS INICIO */
 
 .flex-productos-inicio {
 	display: flex;
@@ -357,6 +367,10 @@ main {
 		&:hover {
 			background-color: #e6a000; 
 		}
+	}
+
+	.precio-prod {
+		font-size: 18px;
 	}
 }
 
@@ -678,6 +692,10 @@ button {
 	 a {
 		margin: 0;
 		margin-bottom: 15px;
+	}
+
+	.precio-prod {
+		font-size: 20px;
 	}
 }
 
@@ -1127,7 +1145,18 @@ button:hover {
 
 /* ACÁ TODOS LOS @MEDIA!!!*/ 
 
-@media only screen and (max-width:992px) {
+@media only screen and (max-width:1200px) {
+
+	/*PRODUCTO MODELO*/
+
+	.descripción-producto-modelo {
+		padding-left: 240px;
+		padding-right: 150px;
+		padding-bottom: 100px;
+	}
+}
+
+@media only screen and (max-width:992px) and (min-width:1199px) {
 
 	/* MENÚ PRINCIPAL */
 	
@@ -1222,112 +1251,6 @@ button:hover {
 	button { 
 		font-size: 13px;
 		border-radius: 5px;
-	}
-
-	/*PRODUCTO MODELO*/
-
-	.producto-modelo {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-content: center;
-		padding: 15px;
-		padding-left: 10px;
-		margin: 0;
-
-		.fotos-costado {
-			display: flex;
-			flex-direction: row;
-			align-content: flex-start;
-
-			.imagenp-producto-modelo {
-				display: flex;
-				justify-content: flex-start;
-				align-content: flex-start;
-				margin: 0;
-				padding: 2px;
-				padding-top: 10px;
-				padding-bottom: 15px;
-
-				img {
-					height: 100%;
-					width: 100%;
-				}
-			}
-		}
-
-		.imagen-producto-modelo img {
-				height: 100%;
-				width: 100%;
-			}
-		
-		.título-precio {
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			padding-left: 10px;
-			padding-top: 20px;
-
-			h2 {
-				color: #2D2D2D;
-				font-size: 20px;
-			}
-
-			h3 {
-				padding-top: 15px;
-				color: #2D2D2D;
-			}
-
-			.calculá-envío p {
-				display: inline-block;
-				font-size: 12px;
-			}
-		}
-
-		.boton-agregar-carrito {
-			padding: 0px;
-			padding-top: 25px;
-		}
-
-		
-		.icono-camión {
-			font-size: 15px;
-		}
-
-		p {
-			display: inline-block;
-			padding-top: 25px;
-			margin: 0;
-			font-size: 15px;
-			}
-
-		.formulario-costo-envío {
-			.texto-botón {
-				display: flex;
-				flex-direction: flex-start;
-				align-content: center;
-				font-size: 13px;
-				background-color: #f0f0f0;
-				width: 200px;
-				margin: 0;
-				margin-top: 25px;
-				padding-left: 25px;
-
-				&:hover {
-					transform: none;
-				}
-			}	
-		}
-	 }
-
-	.descripción-producto-modelo {
-		padding-left: 50px;
-		padding-right: 50px;
-		padding-bottom: 100px;
-
-		p { 
-			font-size: 20px;
-		}
 	}
 
 	/* FOOTER */
@@ -1927,7 +1850,7 @@ button:hover {
 		}
 	}
 
-	/*PÁGINA CONOCENOS*/
+	/*SECCIÓN CONOCENOS*/
 
 	.titulo-ad-astra h1 {
 		margin-top: 25px;
